@@ -115,10 +115,21 @@ export default function ProfileHeader({
             transition={{ delay: 0.8 }}
             className="flex gap-4 pt-8"
           >
-            {[FaGithub, FaLinkedin, FaInstagram].map((Icon, i) => (
-              <div key={i} className="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:border-orange-500 hover:text-orange-500 transition-colors cursor-pointer">
-                <Icon size={14} />
-              </div>
+            {[
+              { Icon: FaGithub, href: "https://github.com/mohammed-rharbi", label: "GitHub" },
+              { Icon: FaLinkedin, href: "https://www.linkedin.com/in/mohammed--rharbi", label: "LinkedIn" },
+              { Icon: FaInstagram, href: "https://www.instagram.com/mohammed_rharbi", label: "Instagram" }
+            ].map((social, i) => (
+              <a
+                key={i}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:border-orange-500 hover:text-orange-500 transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg hover:shadow-orange-500/20"
+              >
+                <social.Icon size={14} />
+              </a>
             ))}
           </motion.div>
 
@@ -192,7 +203,7 @@ export default function ProfileHeader({
               <div className="w-8 h-8 rounded-full bg-slate-200 overflow-hidden relative">
                 <Image src={'/profilepic.webp'} alt="mini" fill className="object-cover" />
               </div>
-              <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs"><FaPhone/></div>
+              <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs"><FaPhone /></div>
             </div>
             <div className="text-slate-900 text-xs font-bold">{name.split(" ")[0]}</div>
             <div className="text-slate-600 text-[10px]">Junior Developer</div>

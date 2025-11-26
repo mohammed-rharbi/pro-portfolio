@@ -8,7 +8,7 @@ export const projects = [
 
   {
     name: 'RegiSport',
-    description: 'RegiSport is a platform for managing and organizing sports events and activities.',
+    description: 'Full sports-event management system with real-time registration, team handling, and admin dashboards. Built with a modular backend (NestJS + Mongo) using clean services/repositories and a React/Tailwind frontend. Includes event creation, participant validation, and automated scheduling logic.',
     technologies: ['NodeJs', 'Mongo', 'React', 'Nest', 'Tailwind'],
     link: 'https://github.com/mohammed-rharbi/RegiSport',
     demo: 'https://yourdemourl.com/mongrandtaxi',
@@ -18,7 +18,7 @@ export const projects = [
 
   {
     name: 'CinéManager',
-    description: 'CinéManager is a platform for managing and organizing movie screenings and events.',
+    description: 'Complete cinema management system with movie scheduling, reservations, seat selection, and admin tools. Backend built with Node/Express + Mongo using services and repositories. Frontend in React/Tailwind with real-time seat updates, JWT auth, email confirmations, and video-streaming module for VOD.',
     technologies: ['NodeJs', 'Mongo', 'React', 'Tailwind', 'Express'],
     link: 'https://github.com/mohammed-rharbi/cinema_manger',
     demo: 'https://yourdemourl.com/mongrandtaxi',

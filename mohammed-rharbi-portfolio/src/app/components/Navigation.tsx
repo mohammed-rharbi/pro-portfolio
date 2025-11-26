@@ -22,8 +22,8 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-2 sm:px-12 lg:px-20 transition-all duration-500 ${scrolled
-          ? "bg-black/40 backdrop-blur-xl shadow-lg shadow-blue-500/10 border-b border-white/10"
-          : "bg-black/20 backdrop-blur-md"
+        ? "bg-black/40 backdrop-blur-xl shadow-lg shadow-blue-500/10 border-b border-white/10"
+        : "bg-black/20 backdrop-blur-md"
         }`}
       style={{
         background: scrolled

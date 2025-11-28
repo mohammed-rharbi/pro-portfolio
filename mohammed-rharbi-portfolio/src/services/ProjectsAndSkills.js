@@ -11,9 +11,9 @@ export const projects = [
     description: 'Full sports-event management system with real-time registration, team handling, and admin dashboards. Built with a modular backend (NestJS + Mongo) using clean services/repositories and a React/Tailwind frontend. Includes event creation, participant validation, and automated scheduling logic.',
     technologies: ['NodeJs', 'Mongo', 'React', 'Nest', 'Tailwind'],
     link: 'https://github.com/mohammed-rharbi/RegiSport',
-    demo: 'https://yourdemourl.com/mongrandtaxi',
+    demo: 'https://regi-sport.vercel.app/',
     image: '/projectsPics/sporti-1.webp',
-    hasDemo: false
+    hasDemo: true
   },
 
   {
